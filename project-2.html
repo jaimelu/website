@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <title>Jaime Portfolio</title>
+    <link rel="stylesheet" href="project-style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+            <a href="index.html" class="home-link"> <span>Jaime Lu</span></a>
+        </div>
+        <div class="links">
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <a href="index.html#home">Home</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <a href="index.html#skills">Skills</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <a href="index.html#projects">Projects</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <a href="index.html#certifications">Certifications</a>
+          </div>
+          <div
+            class="link contact-btn"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <a href="index.html#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+     
+    </nav>
+    <section id="project-description">
+        <h1> Course Information Website</h1>
+        <div id="project-image">
+            <img
+            src="CourseWebsite.png"
+            alt="Software Screenshot"
+            class="projects__row-img"
+            loading="lazy"
+            />
+        </div>
+        <h2> Project Overview</h2>
+        <p> The Course Information Website is a dynamic web application developed to enhance 
+            the experience of University of Maryland (UMD) students in accessing course-related information. 
+            Utilizing a combination of HTML, JavaScript, CSS, Node.js, and the EJS template engine, 
+            this project demonstrates my proficiency in full-stack web development and API integration. 
+            The website serves as a platform for UMD students to input their unique identifiers (UIDs) and courses, enabling them to retrieve detailed information about their enrolled courses. Additionally, the website offers features to search and view professor profiles, providing valuable insights into course instructors and facilitating informed decision-making for students.</p>
+        <h2> Tools used</h2>
+        <div class="tools">
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">HTML</div>
+            <div class="skills__skill">CSS</div>
+            <div class="skills__skill">JavaScript</div>
+            <div class="skills__skill">Node.js</div>
+            <div class="skills__skill">Event handling</div>
+            <div class="skills__skill">Error Handling</div>
+            <div class="skills__skill">Interactive functionality</div>
+            <div class="skills__skill">API</div>
+        </div>
+        <h2> Project Demonstration</h2>
+        <div id="project-demonstration">
+            <iframe 
+            width="560"
+            height="315"
+            src= "https://www.youtube.com/embed/IuNxZ4O49BM?si=221wxnMDaNxeuiFO" 
+            title="Course Information Website Demo"
+            frameborder = "0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            ></iframe>
+        </div>
+    </section>
+    
+  
+
+      <footer id="footer">
+        <div class="footer-container">
+          <h3> Jaime Lu</h3>
+          <p> A passionate Computer Science student with expereince in web development, Android app experience, and AI, <br>complemented by a solid foundation in business strategy and management. </p>
+          <p>&copy; All rights reserved.</p>
+          <p>
+            <a href="https://www.linkedin.com/in/jaime-lu/" target="_blank">LinkedIn</a> |
+            <a href="mailto:jaimelu30@gmail.com">Email</a>
+          </p>
+        </div>
+      </footer>
+      
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
+    <script>
+      function hamburg() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+      }
+      function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

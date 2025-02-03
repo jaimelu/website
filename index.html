@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <title>Jaime Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
+          <a href="index.html" class="home-link"> <span>Jaime Lu</span></a>
+        </div>
+        <div class="links">
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="100"
+          >
+            <a href="#home">Home</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+          >
+            <a href="#skills">Skills</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+          >
+            <a href="#projects">Projects</a>
+          </div>
+          <div
+            class="link"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <a href="#certifications">Certifications</a>
+          </div>
+          <div
+            class="link contact-btn"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="600"
+          >
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+      <div class="dropdown">
+        <div class="links">
+          <a href="#home">Home</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#certifications">Certifications</a>
+          <a href="#contact">Contact</a>
+          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+      <div class="main-container">
+        <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
+          <img src="main.png" alt="" />
+        </div>
+        <div class="content">
+          <h1
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+          >
+            Hi there! I'm <span>Jaime</span>
+          </h1>
+          <div
+            class="typewriter"
+            data-aos="fade-right"
+            data-aos-duration="400"
+            data-aos-delay="900"
+          >
+            I'm a <span class="typewriter-type"></span><label for=""></label>
+          </div>
+          <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
+            I'm a student at University of Maryland, College
+            Park and I'm graduating in May 2025. I am pursuing a Computer Science major 
+            and General Business Minor. I am seeking an entry-level
+            position or internship in front-end development or app design. See
+            some of my work below and feel free to contact me with any questions
+            or opportunities!
+          </p>
+          <div
+            class="social-links"
+            data-aos="flip-down"
+            data-aos-duration="1000"
+            data-aos-delay="1200"
+          >
+            <a href="https://github.com/jaimelu"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a href="https://www.linkedin.com/in/jaime-lu/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </div>
+          <!-- 
+          <div
+            class="CVbtn"
+            data-aos="zoom-out-left"
+            data-aos-duration="1000"
+            data-aos-delay="1300"
+          >
+            <button>Download CV</button>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="skills-container">
+        <h1>Skills</h1>
+        <div class="skills">
+          <div class="skills__skill">HTML</div>
+          <div class="skills__skill">CSS</div>
+          <div class="skills__skill">JavaScript</div>
+          <div class="skills__skill">React</div>
+          <div class="skills__skill">GIT</div>
+          <div class="skills__skill">Android</div>
+          <div class="skills__skill">Kotlin</div>
+          <div class="skills__skill">Python</div>
+          <div class="skills__skill">Java</div>
+          <div class="skills__skill">ProLog</div>
+          <div class="skills__skill">C</div>
+          <div class="skills__skill">Debugging</div>
+          <div class="skills__skill">Querying Databases</div>
+          <div class="skills__skill">SQL</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <div class="projects-container">
+        <h1>Projects</h1>
+        <p class="subheading">Here you will find some of my projects.</p>
+        <div class="projects">
+            <!-- Project 1 -->
+            <div class="project__row">
+                <div class="projects__image">
+                <img
+                src="WeatherApp.png"
+                alt="Software Screenshot"
+                loading="lazy"
+                />
+                </div>
+                <div class="project__row-content">
+                    <h3 class="project__title">Weather App</h3>
+                    <p class="project__desc">
+                        Android weather app in Kotlin that delivers real-time weather forecasts based on the user's current location 
+                        or a user-selected location via a search bar. The app displays hourly temperature updates, an 8-day forecast,
+                        and detailed weather metrics such as sunrise and sunset times, feels-like temperature, UV index, and humidity. 
+                        Designed the user interface using XML layout resources for a clean and user-friendly experience. Integrated
+                        OpenWeather Geocoding API and OneCall 3.0 API to fetch location-specific weather data.
+                    </p>
+                    <a
+                    href="./project-1.html"
+                    class="btn btn--med btn--theme dynamicBgClr"
+                    target="_blank"
+                    >View Here</a>
+                </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project__row">
+                <div class="projects__image">
+                <img
+                src="CourseWebsite.png"
+                alt="Software Screenshot"
+                loading="lazy"
+                />
+                </div>
+                <div class="project__row-content">
+                    <h3 class="project__title">Course Information </h3>
+                    <p class="project__desc">
+                      The Course Information Website is a dynamic web application developed to enhance 
+                      the experience of University of Maryland (UMD) students in accessing course-related information. 
+                      Utilizing a combination of HTML, JavaScript, CSS, Node.js, and the EJS template engine, 
+                      this project demonstrates my proficiency in full-stack web development and API integration. 
+                      The website serves as a platform for UMD students to input their unique identifiers (UIDs) and courses,
+                       enabling them to retrieve detailed information about their enrolled courses. Additionally, the website offers features to search and view professor profiles, providing valuable insights into course instructors and facilitating informed decision-making for students.
+                    </p>
+                    <a
+                    href="./project-2.html"
+                    class="btn btn--med btn--theme dynamicBgClr"
+                    target="_blank"
+                    >View here</a>
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="certifications">
+        <div class="certifications-container">
+          <h1>Certifications</h1>
+          <p class="subheading">These are the certifications I have:</p>
+          <div class="certifications">
+            <!-- Certification 1 -->
+            <h3> AWS Certified Cloud Practitioner</h3>
+            <img
+                src="awsLogo.jpg"
+                alt="AWS Logo"
+                class="img"
+                loading="lazy"
+            />
+            <p> Acquired: August 2023 <br>
+                Company: Amazon Web Services
+            </p>
+
+            <!-- Certification 2 -->
+            <h3> IBM Front-End Development with React Certificate</h3>
+            <img
+                src="ibmReactCertificate.jpeg"
+                alt="IBM Certificate"
+                class="img"
+                loading="lazy"
+            />
+            <p> Acquired: August 2024 <br>
+                Company: IBM
+            </p>
+
+            <!-- Certification 3 -->
+            <h3>IBM SQL Querying Databases Certificate</h3>
+            <img
+                src="IBM SQL Querying Databases Certificate.jpeg"
+                alt="IBM Certificate"
+                class="img"
+                loading="lazy"
+            />
+            <p> Acquired: September 2024 <br>
+                Company: IBM
+            </p>
+          </div>
+        </div>
+      </section>
+      
+      <section id="contact">
+        <div class="contact-container">
+          <h1>Contact</h1>
+          <p class="subheading">Feel free to get in touch with me for opportunities or questions!</p>
+        </div>
+        <div
+            class="social-links"
+          >
+           <!-- LinkedIn Icon -->
+            <a href="https://www.linkedin.com/in/jaime-lu/"><i class="fa-brands fa-linkedin"></i>
+            </a>
+            <!-- Email Button -->
+            <a href="mailto:jaimelu30@gmail.com" class="social-icon"><i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+      </section>
+
+      <footer id="footer">
+        <div class="footer-container">
+          <h3> Jaime Lu</h3>
+          <p> A passionate Computer Science student with expereince in web development, Android app experience, and AI, <br>complemented by a solid foundation in business strategy and management. </p>
+          <p>&copy; All rights reserved.</p>
+          <p>
+            <a href="https://www.linkedin.com/in/jaime-lu/" target="_blank">LinkedIn</a> |
+            <a href="mailto:jaimelu30@gmail.com">Email</a>
+          </p>
+        </div>
+      </footer>
+      
+    
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 0 });
+    </script>
+    <script>
+      function hamburg() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(0px)";
+      }
+      function cancel() {
+        const navbar = document.querySelector(".dropdown");
+        navbar.style.transform = "translateY(-500px)";
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
