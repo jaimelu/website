@@ -87,6 +87,19 @@ nav {
     color: rgb(113, 179, 150);
 }
 
+.btn { 
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: #71b396;
+    color: white;
+    transition: background-color 0.3s ease;
+    }
+    
+.btn:hover {
+    background-color: #5a9d7e;
+}
+
 .dropdown {
     z-index: 100;
     position: absolute;
