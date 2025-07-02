@@ -109,23 +109,8 @@
             ></iframe>
         </div>
     </section>
-    
-  
 
-      <footer id="footer">
-        <div class="footer-container">
-          <h3> Jaime Lu</h3>
-          <p> A dedicated Computer Science student with hands-on experience in both front-end and back-end development, <br> 
-            Android app development, and a strong foundation in business strategy and management. </p>
-          <p>&copy; All rights reserved.</p>
-          <p>
-            <a href="https://www.linkedin.com/in/jaime-lu/" target="_blank">LinkedIn</a> |
-            <a href="mailto:jaimelu30@gmail.com">Email</a>
-          </p>
-        </div>
-      </footer>
-      
-    
+      <div id="footer-placeholder"></div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -142,5 +127,12 @@
       }
     </script>
     <script src="script.js"></script>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
   </body>
 </html>

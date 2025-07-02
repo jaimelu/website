@@ -1,8 +1,8 @@
 // Typewriter Effect
 const texts = [
     "developer",
-    "student",
-    "programmer"
+    "designer",
+    "builder"
 ]
 let speed  =75;
 const textElements = document.querySelector(".typewriter-type");

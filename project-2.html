@@ -15,7 +15,7 @@
     <nav>
       <div class="nav-container">
         <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-            <a href="index.html" class="home-link"> <span>Jaime Lu</span></a>
+          <a href="index.html" class="home-link"> <span>Jaime Lu</span></a>
         </div>
         <div class="links">
           <div
@@ -70,66 +70,58 @@
           <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
         </div>
       </div>
-     
     </nav>
     <section id="project-description">
-        <h1> Course Information Website</h1>
-        <div id="project-image">
-            <img
-            src="CourseWebsite.png"
-            alt="Software Screenshot"
-            class="projects__row-img"
-            loading="lazy"
-            />
-        </div>
-        <h2> Project Overview</h2>
-        <p> The Course Information Website is a dynamic web application developed to enhance 
-            the experience of University of Maryland (UMD) students in accessing course-related information. 
-            Utilizing a combination of HTML, JavaScript, CSS, Node.js, and the EJS template engine, 
-            this project demonstrates my proficiency in full-stack web development and API integration. 
-            The website serves as a platform for UMD students to input their unique identifiers (UIDs) and courses, enabling them to retrieve detailed information about their enrolled courses. Additionally, the website offers features to search and view professor profiles, providing valuable insights into course instructors and facilitating informed decision-making for students.</p>
-        <h2> Tools used</h2>
-        <div class="tools">
-            <div class="skills__skill">JavaScript</div>
-            <div class="skills__skill">HTML</div>
-            <div class="skills__skill">CSS</div>
-            <div class="skills__skill">JavaScript</div>
-            <div class="skills__skill">Node.js</div>
-            <div class="skills__skill">Event handling</div>
-            <div class="skills__skill">Error Handling</div>
-            <div class="skills__skill">Interactive functionality</div>
-            <div class="skills__skill">API</div>
-        </div>
-        <h2> Project Demonstration</h2>
+      <h1>BrainyQuest</h1>
+      <div id="project-image">
+        <img
+          src="FigmaDesign.png"
+          alt="Software Screenshot"
+          class="projects__row-img"
+          loading="lazy"
+        />
+      </div>
+      <h2>Project Overview</h2>
+      <p>
+        High-fidelity interactive prototype for a mobile educational app aimed
+        at teaching young children foundational skills through games. Developed
+        user flows, wireframes (low-, mid-, high-fidelity), and interactive
+        prototypes in Figma. Focused on intuitive navigation, accessibility, and
+        user motivation through gamified elements like achievements, streaks,
+        and point-based rewards. Incorporated peer and user feedback to refine
+        layouts, adjust UI responsiveness, and improve visual hierarchy for
+        young audiences
+      </p>
+      <h2>Tools used</h2>
+      <div class="tools">
+        <div class="skills__skill">Figma</div>
+        <div class="skills__skill">UI/UX Design</div>
+        <div class="skills__skill">Wireframing</div>
+        <div class="skills__skill">Prototyping</div>
+        <div class="skills__skill">Interactive Design</div>
+        <div class="skills__skill">Visual Hierarcy</div>
+        <div class="skills__skill">Accessibility</div>
+        <div class="skills__skill">Typography</div>
+        <div class="skills__skill">Color Theory</div>
+        <div class="skills__skill">Design Iteration</div>
+      </div>
+      <h2>Project Demonstration</h2>
+      <div id="project-demonstration">
         <div id="project-demonstration">
-            <iframe 
-            width="560"
-            height="315"
-            src= "https://www.youtube.com/embed/IuNxZ4O49BM?si=221wxnMDaNxeuiFO" 
-            title="Course Information Website Demo"
-            frameborder = "0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          <iframe
+            style="border: 1px solid rgba(0, 0, 0, 0.1)"
+            width="800"
+            height="450"
+            src="https://embed.figma.com/proto/nxe45PlwFfwIeqzcuET65a/Group-7?node-id=7124-149&p=f&scaling=scale-down&content-scaling=fixed&page-id=7124%3A145&starting-point-node-id=7124%3A149&hotspot-hints=0&embed-host=share"
             allowfullscreen
-            ></iframe>
+          >
+          </iframe>
+          <p> For best experience of demonstration, use full screen.</p>
         </div>
+      </div>
     </section>
-    
-  
 
-      <footer id="footer">
-        <div class="footer-container">
-          <h3> Jaime Lu</h3>
-          <p> A dedicated Computer Science student with hands-on experience in both front-end and back-end development, <br> 
-            Android app development, and a strong foundation in business strategy and management. </p>
-          <p>&copy; All rights reserved.</p>
-          <p>
-            <a href="https://www.linkedin.com/in/jaime-lu/" target="_blank">LinkedIn</a> |
-            <a href="mailto:jaimelu30@gmail.com">Email</a>
-          </p>
-        </div>
-      </footer>
-      
-    
+    <div id="footer-placeholder"></div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
@@ -146,5 +138,12 @@
       }
     </script>
     <script src="script.js"></script>
+    <script>
+      fetch("footer.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("footer-placeholder").innerHTML = data;
+        });
+    </script>
   </body>
 </html>
