@@ -12,71 +12,14 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-          <a href="index.html" class="home-link"> <span>Jaime Lu</span></a>
-        </div>
-        <div class="links">
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <a href="index.html#home">Home</a>
-          </div>
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-          >
-            <a href="index.html#skills">Skills</a>
-          </div>
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="400"
-          >
-            <a href="index.html#projects">Projects</a>
-          </div>
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <a href="index.html#certifications">Certifications</a>
-          </div>
-          <div
-            class="link contact-btn"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="600"
-          >
-            <a href="index.html#contact">Contact</a>
-          </div>
-        </div>
-      </div>
-      <div class="dropdown">
-        <div class="links">
-          <a href="#home">Home</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#contact">Contact</a>
-          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
     <section id="project-description">
       <h1>BrainyQuest</h1>
       <div id="project-image">
         <img
           src="FigmaDesign.png"
           alt="Software Screenshot"
+          width="450"
           class="projects__row-img"
           loading="lazy"
         />
@@ -85,13 +28,19 @@
       <p>
         High-fidelity interactive prototype for a mobile educational app aimed
         at teaching young children foundational skills through games. Developed
-        user flows, wireframes (low-, mid-, high-fidelity), and interactive
+        user flows, wireframes (low-, mid-, high-fidelity seen below), and interactive
         prototypes in Figma. Focused on intuitive navigation, accessibility, and
         user motivation through gamified elements like achievements, streaks,
         and point-based rewards. Incorporated peer and user feedback to refine
         layouts, adjust UI responsiveness, and improve visual hierarchy for
         young audiences
       </p>
+      <img
+                src="LowMidHighFidelity.png"
+                alt="low, mid, high fidelity wireframes"
+                width="600"
+                loading="lazy"
+              />
       <h2>Tools used</h2>
       <div class="tools">
         <div class="skills__skill">Figma</div>
@@ -138,6 +87,14 @@
       }
     </script>
     <script src="script.js"></script>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+          AOS.init({ offset: 0 });
+        });
+    </script>
     <script>
       fetch("footer.html")
         .then((res) => res.text())

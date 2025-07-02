@@ -12,65 +12,7 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav-container">
-        <div class="logo" data-aos="zoom-in" data-aos-duration="1000">
-          <a href="index.html" class="home-link"> <span>Jaime Lu</span></a>
-        </div>
-        <div class="links">
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="100"
-          >
-            <a href="#home">Home</a>
-          </div>
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="300"
-          >
-            <a href="#skills">Skills</a>
-          </div>
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="400"
-          >
-            <a href="#projects">Projects</a>
-          </div>
-          <div
-            class="link"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="500"
-          >
-            <a href="#certifications">Certifications</a>
-          </div>
-          <div
-            class="link contact-btn"
-            data-aos="fade-up"
-            data-aos-duration="1000"
-            data-aos-delay="600"
-          >
-            <a href="#contact">Contact</a>
-          </div>
-        </div>
-      </div>
-      <div class="dropdown">
-        <div class="links">
-          <a href="#home">Home</a>
-          <a href="#skills">Skills</a>
-          <a href="#projects">Projects</a>
-          <a href="#certifications">Certifications</a>
-          <a href="#contact">Contact</a>
-          <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
-        </div>
-      </div>
-    </nav>
+    <div id="navbar-placeholder"></div>
     <section id="home">
       <div class="main-container">
         <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
@@ -93,10 +35,12 @@
             I'm a <span class="typewriter-type"></span><label for=""></label>
           </div>
           <p data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000">
-            I'm a recent graduate from the University of Maryland, College Park with a B.S. 
-            in Computer Science and a Minor in General Business. I'm currently seeking an 
-            entry-level position in front-end web or Android app design, or as a full-stack developer. 
-            some of my work below, and feel free to reach out with any questions or opportunities!
+            I'm a recent graduate from the University of Maryland, College Park
+            with a B.S. in Computer Science and a Minor in General Business. I'm
+            currently seeking an entry-level position in front-end web or
+            Android app design, or as a full-stack developer. some of my work
+            below, and feel free to reach out with any questions or
+            opportunities!
           </p>
           <div
             class="social-links"
@@ -128,21 +72,49 @@
     <section id="skills">
       <div class="skills-container">
         <h1>Skills</h1>
+        <h3>Languages</h3>
         <div class="skills">
+          <!-- Languages-->
           <div class="skills__skill">HTML</div>
           <div class="skills__skill">CSS</div>
           <div class="skills__skill">JavaScript</div>
-          <div class="skills__skill">React</div>
-          <div class="skills__skill">GIT</div>
-          <div class="skills__skill">Android</div>
           <div class="skills__skill">Kotlin</div>
           <div class="skills__skill">Python</div>
           <div class="skills__skill">Java</div>
           <div class="skills__skill">ProLog</div>
           <div class="skills__skill">C</div>
-          <div class="skills__skill">Debugging</div>
+        </div>
+        <h3>Frameworks & Libraries</h3>
+        <div class="skills">
+          <!-- Frameworks & Libraries-->
+          <div class="skills__skill">React</div>
+          <div class="skills__skill">Node.js</div>
+          <div class="skills__skill">Vue.js</div>
+          <div class="skills__skill">Angular</div>
+          <div class="skills__skill">Bootstrap</div>
+        </div>
+        <h3>UI/UX & Design Tools</h3>
+        <div class="skills">
+          <!-- UI/UX & Design Tools-->
+          <div class="skills__skill">Figma</div>
+          <div class="skills__skill">UI/UX Design</div>
+          <div class="skills__skill">Prototyping</div>
+        </div>
+        <h3>Databases</h3>
+        <div class="skills">
+          <!-- Databases -->
           <div class="skills__skill">MongoDB</div>
           <div class="skills__skill">SQL</div>
+          <div class="skills__skill">Firebase</div>
+        </div>
+        <h3>DevOps & Deployment</h3>
+        <div class="skills">
+          <!-- DevOps & Deployment -->
+          <div class="skills__skill">GIT</div>
+          <div class="skills__skill">GitHub</div>
+          <div class="skills__skill">Docker</div>
+          <div class="skills__skill">CI/CD</div>
+          <div class="skills__skill">Cloud Computing(AWS)</div>
         </div>
       </div>
     </section>
@@ -172,7 +144,7 @@
                 data.
               </p>
               <a
-                href="./project-1.html"
+                href="./weather-app.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >View Here</a
@@ -197,7 +169,7 @@
                 flow, accessibility, and responsive layout.
               </p>
               <a
-                href="./project-2.html"
+                href="./brainyquest.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >View Here</a
@@ -222,7 +194,7 @@
                 course information.
               </p>
               <a
-                href="./project-3.html"
+                href="./course-website.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >View here</a
@@ -249,7 +221,7 @@
                 systemic factors influencing suicide rates.
               </p>
               <a
-                href="./project-4.html"
+                href="./suicide-rate-analysis.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >View here</a
@@ -338,6 +310,13 @@
       }
     </script>
     <script src="script.js"></script>
+    <script>
+      fetch("navbar.html")
+        .then((res) => res.text())
+        .then((data) => {
+          document.getElementById("navbar-placeholder").innerHTML = data;
+        });
+    </script>
     <script>
       fetch("footer.html")
         .then((res) => res.text())
