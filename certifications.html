@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="certificate-style.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/certificates.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Jaime Portfolio</title>
   </head>
@@ -15,7 +16,7 @@
     <section class="certificate-container">
     <section class="certificate">
         <h2>AWS Certified Cloud Practitioner</h2>
-        <img src="awsLogo.jpg" alt="AWS Logo" class="img" loading="lazy" />
+        <img src="assets/images/awsLogo.jpg" alt="AWS Logo" class="img" loading="lazy" />
         <p>
             Acquired: August 2023 <br />
             Company: Amazon Web Services <br>
@@ -35,8 +36,36 @@
     </section>
 
     <section class="certificate">
+        <h2>Google Advanced Data Analytics Specialization</h2>
+        <img src="assets/images/Google Advanced Data Analytics Specialization.jpeg" alt="AWS Logo" class="img" loading="lazy" />
+        <p>
+            Acquired: September 2025 <br />
+            Company: Google <br>
+            Credential ID: 1LR19C1SDZ98
+        </p>
+        <h3>Skills used</h3>
+            <div class="tools">
+                <div class="skills__skill">Advanced Analytics</div>
+                <div class="skills__skill">Data Analysis</div>
+                <div class="skills__skill">Data Ethics</div>
+                <div class="skills__skill">Descriptive Statistics</div>
+                <div class="skills__skill">Data Storytelling</div>
+                <div class="skills__skill">Statistical Hypothesis Testing</div>
+                <div class="skills__skill">Tableau Software</div>
+                <div class="skills__skill">Data Presentation</div>
+            </div>
+            <a
+          href="https://www.coursera.org/account/accomplishments/professional-cert/1LR19C1SDZ98"
+          class="btn btn--med btn--theme dynamicBgClr"
+          target="_blank"
+          >View Credentials
+        </a>
+        
+    </section>
+    
+    <section class="certificate">
         <h2>IBM Front-End Development with React Certificate</h2>
-        <img src="ibmReactCertificate.jpeg" alt="IBM Certificate" class="img"loading="lazy"/>
+        <img src="assets/images/ibmReactCertificate.jpeg" alt="IBM Certificate" class="img"loading="lazy"/>
         <p>
             Acquired: August 2024 <br />
             Company: IBM
@@ -61,7 +90,7 @@
       
     <section class="certificate">
         <h2>IBM SQL Querying Databases Certificate</h2>
-        <img src="IBM SQL Querying Databases Certificate.jpeg" alt="IBM Certificate" class="img"loading="lazy"/>
+        <img src="assets/images/IBM SQL Querying Databases Certificate.jpeg" alt="IBM Certificate" class="img"loading="lazy"/>
         <p>
             Acquired: September 2024 <br />
             Company: IBM
@@ -85,7 +114,7 @@
 
     <section class="certificate">
         <h2>Excel Essential Training (Microsoft 365)</h2>
-        <img src="ExcelEssentialTraining.jfif" alt="LinkedIn Learning Certificate" class="img"loading="lazy"/>
+        <img src="assets/images/ExcelEssentialTraining.jfif" alt="LinkedIn Learning Certificate" class="img"loading="lazy"/>
         <p>
             Acquired: April 2025 <br />
             Company: LinkedIn
@@ -93,6 +122,7 @@
         <h3>Skills used</h3>
             <div class="tools">
                 <div class="skills__skill">Microsoft Excel</div>
+                <div class="skills__skill">Data Management</div>
             </div>
         <a
           href="https://www.linkedin.com/learning/certificates/c7885297258bb47512a2dc67abb23261361380d2c0b27cf5ee7ef3cba8dbcd9d?u=41910388"
@@ -104,7 +134,7 @@
 
     <section class="certificate">
         <h2>Introduction to Tableau Certificate</h2>
-        <img src="IntroToTableauCertificate.jpeg" alt="Tableau Certificate" class="img"loading="lazy"/>
+        <img src="assets/images/IntroToTableauCertificate.jpeg" alt="Tableau Certificate" class="img"loading="lazy"/>
         <p>
             Acquired: July 2025 <br />
             Company: Tableau Learning Partner
@@ -129,7 +159,7 @@
 
     <section class="certificate">
         <h2>Google Agile Project Management Certificate</h2>
-        <img src="Google Agile Project Management.jpeg" alt="Google Certificate" class="img"loading="lazy"/>
+        <img src="assets/images/Google Agile Project Management.jpeg" alt="Google Certificate" class="img"loading="lazy"/>
         <p>
             Acquired: July 2025 <br />
             Company: Google
@@ -158,34 +188,7 @@
     <div id="footer-placeholder"></div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ offset: 0 });
-    </script>
-    <script>
-      function hamburg() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(0px)";
-      }
-      function cancel() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(-500px)";
-      }
-    </script>
-    <script src="script.js"></script>
-    <script>
-      fetch("navbar.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("navbar-placeholder").innerHTML = data;
-          AOS.init({ offset: 0 });
-        });
-    </script>
-    <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    </script>
+    <script src="js/script.js"></script>
+    
   </body>
 </html>

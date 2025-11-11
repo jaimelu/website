@@ -8,7 +8,8 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
     />
     <title>Jaime Portfolio</title>
-    <link rel="stylesheet" href="project-style.css" />
+    <link rel="stylesheet" href="../css/base.css" />
+    <link rel="stylesheet" href="../css/projects.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
@@ -17,7 +18,7 @@
         <h1> Course Information Website</h1>
         <div id="project-image">
             <img
-            src="CourseWebsite.png"
+            src="../assets/images/CourseWebsite.png"
             alt="Software Screenshot"
             class="projects__row-img"
             loading="lazy"
@@ -58,33 +59,6 @@
       <div id="footer-placeholder"></div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ offset: 0 });
-    </script>
-    <script>
-      function hamburg() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(0px)";
-      }
-      function cancel() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(-500px)";
-      }
-    </script>
-    <script src="script.js"></script>
-    <script>
-      fetch("navbar.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("navbar-placeholder").innerHTML = data;
-        });
-    </script>
-    <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    </script>
+    <script src="../js/script.js"></script>
   </body>
 </html>

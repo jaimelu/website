@@ -3,12 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"/>
     <title>Jaime Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
@@ -16,7 +14,7 @@
     <section id="home">
       <div class="main-container">
         <div class="image" data-aos="zoom-in-right" data-aos-duration="2500">
-          <img src="main.png" alt="" />
+          <img src="assets/images/main.png" alt="" />
         </div>
         <div class="content">
           <h1
@@ -75,6 +73,7 @@
         <h3>Languages</h3>
         <div class="skills">
           <!-- Languages-->
+           <div class="skills__skill">TypeScript</div>
           <div class="skills__skill">HTML</div>
           <div class="skills__skill">CSS</div>
           <div class="skills__skill">JavaScript</div>
@@ -83,6 +82,7 @@
           <div class="skills__skill">Java</div>
           <div class="skills__skill">ProLog</div>
           <div class="skills__skill">C</div>
+          <div class="skills__skill">Ruby</div>
         </div>
         <h3>Frameworks & Libraries</h3>
         <div class="skills">
@@ -138,7 +138,7 @@
           <div class="project__row">
             <div class="projects__image">
               <img
-                src="WeatherApp.png"
+                src="assets/images/WeatherApp.png"
                 alt="Software Screenshot"
                 width="400"
                 loading="lazy"
@@ -154,7 +154,7 @@
                 data.
               </p>
               <a
-                href="./weather-app.html"
+                href="projects/weather-app.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >View Here</a
@@ -162,10 +162,10 @@
             </div>
           </div>
           <!-- Project 2 -->
-          <div class="project__row">
+          <div class="project__row project__row--reverse">
             <div class="projects__image">
               <img
-                src="FigmaDesign.png"
+                src="assets/images/FigmaDesign.png"
                 alt="Software Screenshot"
                 width="400"
                 loading="lazy"
@@ -179,7 +179,7 @@
                 flow, accessibility, and responsive layout.
               </p>
               <a
-                href="./brainyquest.html"
+                href="projects/brainyquest.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >View Here</a
@@ -190,7 +190,7 @@
           <div class="project__row">
             <div class="projects__image">
               <img
-                src="CourseWebsite.png"
+                src="assets/images/CourseWebsite.png"
                 alt="Software Screenshot"
                 loading="lazy"
               />
@@ -204,7 +204,7 @@
                 course information.
               </p>
               <a
-                href="./course-website.html"
+                href="projects/course-website.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >View here</a
@@ -212,10 +212,10 @@
             </div>
           </div>
           <!-- Project 4 -->
-          <div class="project__row">
+          <div class="project__row project__row--reverse">
             <div class="projects__image">
               <img
-                src="DataAnalysis.png"
+                src="assets/images/DataAnalysis.png"
                 alt="Software Screenshot"
                 loading="lazy"
               />
@@ -231,7 +231,7 @@
                 systemic factors influencing suicide rates.
               </p>
               <a
-                href="./suicide-rate-analysis.html"
+                href="projects/suicide-rate-analysis.html"
                 class="btn btn--med btn--theme dynamicBgClr"
                 target="_blank"
                 >View here</a
@@ -277,34 +277,8 @@
     <div id="footer-placeholder"></div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init({ offset: 0 });
-    </script>
-    <script>
-      function hamburg() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(0px)";
-      }
-      function cancel() {
-        const navbar = document.querySelector(".dropdown");
-        navbar.style.transform = "translateY(-500px)";
-      }
-    </script>
-    <script src="script.js"></script>
-    <script>
-      fetch("navbar.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("navbar-placeholder").innerHTML = data;
-        });
-    </script>
-
-    <script>
-      fetch("footer.html")
-        .then((res) => res.text())
-        .then((data) => {
-          document.getElementById("footer-placeholder").innerHTML = data;
-        });
-    </script>
+    <script src="js/script.js"></script>
+    
+    
   </body>
 </html>

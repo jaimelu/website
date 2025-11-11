@@ -1,0 +1,141 @@
+/* ============================================
+   PROJECT DETAIL PAGES SPECIFIC STYLES
+   ============================================ */
+
+#project-description {
+    padding: 2rem clamp(1rem, 5vw, 3rem);
+    max-width: 900px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+#project-description h1 {
+    font-size: clamp(1.5rem, 4vw, 3rem);
+    margin-bottom: 1.5rem;
+    padding: 0 1rem;
+}
+
+#project-description h2 {
+    color: var(--text-dark);
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+#project-description p {
+    padding: 0 1rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Project Image Container */
+#project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+#project-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Tools Section */
+.tools {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Project Demonstration Container */
+#project-demonstration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+    margin: 2rem 0;
+    width: 100%;
+}
+
+#project-demonstration iframe {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#project-demonstration p {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    #project-description {
+        padding: 1.5rem clamp(1rem, 4vw, 2rem);
+    }
+
+    #project-description h1 {
+        font-size: clamp(1.2rem, 5vw, 2rem);
+        padding: 0 0.5rem;
+    }
+
+    #project-description h2 {
+        padding: 0.75rem 0.5rem;
+        font-size: 1.3rem;
+    }
+
+    #project-description p {
+        padding: 0 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    #project-image img {
+        max-width: 90%;
+    }
+
+    #project-demonstration iframe {
+        max-width: 100%;
+        border-radius: 4px;
+    }
+
+    .tools {
+        padding: 0 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #project-description {
+        padding: 1rem;
+    }
+
+    #project-description h1 {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+
+    #project-description h2 {
+        font-size: 1.2rem;
+        padding: 0.5rem;
+    }
+
+    #project-image {
+        padding: 0.5rem;
+    }
+
+    #project-demonstration {
+        padding: 0.5rem;
+    }
+
+    #project-demonstration iframe {
+        border-radius: 0;
+    }
+}
