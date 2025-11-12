@@ -121,7 +121,7 @@ window.cancel = () => MobileNav.cancel();
 // 3. TYPEWRITER EFFECT (Home page only)
 // ============================================
 const TypewriterEffect = {
-  texts: ["developer", "designer", "builder"],
+  texts: ["a developer", "a problem-solver", "a creator", "an analyst"],
   speed: 75,
   textIndex: 0,
   characterIndex: 0,
